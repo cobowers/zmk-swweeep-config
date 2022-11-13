@@ -55,6 +55,12 @@
                 #binding-cells = <0>;
                 bindings = <&macro_tap &kp X &kp X>;
             };
+            m_tabtab: m_tabtab {
+                label = "MACRO_DOUBLE_TAB";
+                compatible = "zmk,behavior-macro";
+                #binding-cells = <0>;
+                bindings = <&macro_tap &kp TAB &kp TAB>;
+            };
         };
 
         behaviors {
@@ -126,6 +132,15 @@
                     flavor = "tap-preferred";
                     bindings = <&kp>, <&m_xx>;
                 };
+                th_macro_tab: tap_hold_macro_tab {
+                    compatible = "zmk,behavior-hold-tap";
+                    label = "TAP_THEN_HOLD_MACRO_TAB";
+                    #binding-cells = <2>;
+                    tapping-term-ms = <200>;
+                    quick-tap-ms = <QUICK_TAP>;
+                    flavor = "tap-preferred";
+                    bindings = <&to>, <&m_tabtab>;
+                };
                 td0: tap_dance_0 {
                     compatible = "zmk,behavior-tap-dance";
                     label = "TAP_DANCE_TO_NUMPAD_LAYER";
@@ -181,6 +196,13 @@
                     #binding-cells = <0>;
                     tapping-term-ms = <TAPPING_TERM>;
                     bindings = <&kp LA(PSCRN)>, <&kp PSCRN>;
+                };
+                th_tab_: tap_hold_tab {
+                    compatible = "zmk,behavior-tap-dance";
+                    label = "TAP_HOLD_TAB";
+                    #binding-cells = <0>;
+                    tapping-term-ms = <TAPPING_TERM>;
+                    bindings = <&kp TAB>, <&th_macro_tab L_NUMPAD 0>;
                 };
 
         };
