@@ -229,6 +229,12 @@
                     bindings = <&td2>;
                     layers = <0>;
                 };
+                combo_toggle_output {
+                    timeout-ms = <COMBO_TIMEOUT>;
+                    key-positions = <20 24>;
+                    bindings = <&out OUT_TOG>;
+                    layers = <0>;
+                };
         };
 
     keymap {
