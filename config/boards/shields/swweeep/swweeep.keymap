@@ -217,6 +217,18 @@
                     bindings = <&kp SEMI>;
                     layers = <0>;
                 };
+                combo_reset_left {
+                    timeout-ms = <COMBO_TIMEOUT>;
+                    key-positions = <0 4>;
+                    bindings = <&td2>;
+                    layers = <0>;
+                };
+                combo_reset_right {
+                    timeout-ms = <COMBO_TIMEOUT>;
+                    key-positions = <5 9>;
+                    bindings = <&td2>;
+                    layers = <0>;
+                };
         };
 
     keymap {
