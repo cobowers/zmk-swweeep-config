@@ -271,7 +271,7 @@
    &trans  &trans  &trans  &trans  &trans               &kp KP_MULTIPLY  &kp KP_N7      &kp KP_N8  &kp KP_N9  &kp KP_MINUS
    &trans  &trans  &trans  &trans  &trans               &kp KP_DIVIDE    &kp KP_N4      &kp KP_N5  &kp KP_N6  &kp KP_PLUS
    &trans  &trans  &trans  &trans  &trans               &kp KP_N0        &kp KP_N1      &kp KP_N2  &kp KP_N3  &kp KP_DOT
-                   &trans  &trans  &to L_DEFAULT        &trans           &trans         &trans
+                   &trans  &trans  &to L_DEFAULT        &trans           &to L_DEFAULT  &kp BSPC
             >;
         };
 
@@ -288,9 +288,9 @@
         control_layer {  // 5 (L_CONTROL)
             label = "Control";
             bindings = <
-   &td2          &trans        &trans        &trans        &bt BT_CLR          &trans  &trans  &trans  &trans  &trans  &td2
-   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4        &trans  &trans  &trans  &trans  &trans  &out OUT_USB
-   &trans        &trans        &trans        &trans        &trans              &trans  &trans  &trans  &trans  &trans  &out OUT_BLE
+   &td2          &trans        &trans        &trans        &bt BT_CLR          &trans  &trans  &trans  &trans  &td2
+   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4        &trans  &trans  &trans  &trans  &out OUT_USB
+   &trans        &trans        &trans        &trans        &trans              &trans  &trans  &trans  &trans  &out OUT_BLE
                                &trans        &trans        &trans              &trans  &trans  &trans
             >;
         };
