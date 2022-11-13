@@ -189,31 +189,31 @@
                 compatible = "zmk,combos";
                 combo_grave {
                     timeout-ms = <COMBO_TIMEOUT>;
-                    key-positions = <1 2>;
+                    key-positions = <0 1>;
                     bindings = <&kp GRAVE>;
                     layers = <0>;
                 };
                 combo_tilde {
                     timeout-ms = <COMBO_TIMEOUT>;
-                    key-positions = <2 3>;
+                    key-positions = <1 2>;
                     bindings = <&kp TILDE>;
                     layers = <0>;
                 };
                 combo_pipe {
                     timeout-ms = <COMBO_TIMEOUT>;
-                    key-positions = <3 4>;
+                    key-positions = <2 3>;
                     bindings = <&kp PIPE>;
                     layers = <0>;
                 };
                 combo_minus {
                     timeout-ms = <COMBO_TIMEOUT>;
-                    key-positions = <9 10>;
+                    key-positions = <8 9>;
                     bindings = <&kp MINUS>;
                     layers = <0>;
                 };
                 combo_semicolon {
                     timeout-ms = <COMBO_TIMEOUT>;
-                    key-positions = <21 22>;
+                    key-positions = <18 19>;
                     bindings = <&kp SEMI>;
                     layers = <0>;
                 };
