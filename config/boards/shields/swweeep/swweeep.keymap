@@ -246,7 +246,7 @@
             label = "Nav/Media";
             bindings = <
    &kp F1     &kp F2         &kp F3      &kp F4        &kp F5               &kp F6     &kp F7       &kp F8       &kp F9     &kp F10
-   &kp PG_UP  &th_print_win  &trans      &kp C_VOL_UP  &kp F11              &mkp LCLK  &kp LEFT     &kp DOWN     &kp UP     &kp RIGHT
+   &kp PG_UP  &th_print_win  &trans      &kp C_VOL_UP  &kp F11              &trans     &kp LEFT     &kp DOWN     &kp UP     &kp RIGHT
    &kp PG_DN  &kp SLCK       &kp C_MUTE  &kp C_VOL_DN  &kp F12              &trans     &trans       &trans       &trans     &trans
                              &trans      &td1          &mo L_CONTROL        &trans     &trans       &trans
             >;
