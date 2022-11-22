@@ -6,7 +6,7 @@
 // global config settings
 #define TAPPING_TERM 190
 #define QUICK_TAP 200
-#define COMBO_TIMEOUT 30
+#define COMBO_TIMEOUT 35
 
 // layer aliases
 #define L_DEFAULT 0
@@ -54,6 +54,12 @@
                 compatible = "zmk,behavior-macro";
                 #binding-cells = <0>;
                 bindings = <&macro_tap &kp X &kp X>;
+            };
+            m_zz: m_zz {
+                label = "MACRO_DOUBLE_Z";
+                compatible = "zmk,behavior-macro";
+                #binding-cells = <0>;
+                bindings = <&macro_tap &kp Z &kp Z>;
             };
             m_tabtab: m_tabtab {
                 label = "MACRO_DOUBLE_TAB";
@@ -132,6 +138,15 @@
                     flavor = "tap-preferred";
                     bindings = <&kp>, <&m_xx>;
                 };
+                th_macro_z: tap_hold_macro_z {
+                    compatible = "zmk,behavior-hold-tap";
+                    label = "TAP_THEN_HOLD_MACRO_X";
+                    #binding-cells = <2>;
+                    tapping-term-ms = <200>;
+                    quick-tap-ms = <QUICK_TAP>;
+                    flavor = "tap-preferred";
+                    bindings = <&kp>, <&m_zz>;
+                };
                 th_macro_tab: tap_hold_macro_tab {
                     compatible = "zmk,behavior-hold-tap";
                     label = "TAP_THEN_HOLD_MACRO_TAB";
@@ -166,29 +181,36 @@
                     compatible = "zmk,behavior-tap-dance";
                     label = "TAP_HOLD_CTRL_A";
                     #binding-cells = <0>;
-                    tapping-term-ms = <TAPPING_TERM>;
+                    "tapping-term-ms = <QUICK_TAP>;
                     bindings = <&hm LCTRL A>, <&th_macro_a LC(A) 0>;
                 };
                 th_c: tap_hold_c {
                     compatible = "zmk,behavior-tap-dance";
                     label = "TAP_HOLD_CTRL_C";
                     #binding-cells = <0>;
-                    tapping-term-ms = <TAPPING_TERM>;
+                    tapping-term-ms = <QUICK_TAP>;
                     bindings = <&kp C>, <&th_macro_c LC(C) 0>;
                 };
                 th_v: tap_hold_v {
                     compatible = "zmk,behavior-tap-dance";
                     label = "TAP_HOLD_CTRL_V";
                     #binding-cells = <0>;
-                    tapping-term-ms = <TAPPING_TERM>;
+                    tapping-term-ms = <QUICK_TAP>;
                     bindings = <&kp V>, <&th_macro_v LC(V) 0>;
                 };
                 th_x: tap_hold_x {
                     compatible = "zmk,behavior-tap-dance";
                     label = "TAP_HOLD_CTRL_X";
                     #binding-cells = <0>;
-                    tapping-term-ms = <TAPPING_TERM>;
+                    tapping-term-ms = <QUICK_TAP>;
                     bindings = <&kp X>, <&th_macro_x LC(X) 0>;
+                };
+                th_z: tap_hold_z {
+                    compatible = "zmk,behavior-tap-dance";
+                    label = "TAP_HOLD_CTRL_Z";
+                    #binding-cells = <0>;
+                    tapping-term-ms = <QUICK_TAP>;
+                    bindings = <&kp Z>, <&th_macro_z LC(Z) 0>;
                 };
                 th_print_win: tap_hold_print_window {
                     compatible = "zmk,behavior-tap-dance";
