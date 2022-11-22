@@ -181,7 +181,7 @@
                     compatible = "zmk,behavior-tap-dance";
                     label = "TAP_HOLD_CTRL_A";
                     #binding-cells = <0>;
-                    "tapping-term-ms = <QUICK_TAP>;
+                    tapping-term-ms = <QUICK_TAP>;
                     bindings = <&hm LCTRL A>, <&th_macro_a LC(A) 0>;
                 };
                 th_c: tap_hold_c {
