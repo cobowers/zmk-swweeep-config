@@ -283,7 +283,7 @@
             bindings = <
    &kp Q  &kp W       &kp F          &kp P          &kp B                     &kp J                &kp L             &kp U          &kp Y         &kp SQT
    &th_a  &hm LGUI R  &hm LALT S     &hs LSHFT T    &kp G                     &kp M                &hs RSHFT N       &hm RALT E     &hm RGUI I    &hm RCTRL O
-   &kp Z  &th_x       &th_c          &kp D          &th_v                     &kp K                &kp H             &kp COMMA      &kp DOT       &kp FSLH
+   &th_z  &th_x       &th_c          &kp D          &th_v                     &kp K                &kp H             &kp COMMA      &kp DOT       &kp FSLH
                       &kp RET        &mt LSHFT ESC  &lt L_NUM_SYM BSPC        &lt L_NAV_MED SPACE  &lt L_NUMPAD TAB  &kp DEL
             >;
         };
