@@ -187,7 +187,7 @@
     &kp T  &kp Q  &kp W     &kp E       &kp R                &trans  &trans         &trans  &trans  &trans
     &kp G  &kp A  &kp S     &kp D       &kp F                &trans  &trans         &trans  &trans  &trans
     &kp Z  &kp X  &kp C     &kp V       &kp B                &trans  &trans         &trans  &trans  &trans
-                  &kp LCTP  &kp LSHIFT  &kp SPACE            &trans  &to L_DEFAULT  &trans
+                  &kp LCTL  &kp LSHIFT  &kp SPACE            &trans  &to L_DEFAULT  &trans
                         >;
                 };
 
